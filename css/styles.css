@@ -287,31 +287,63 @@ img {
   display: inline-block;
   width: 44px;
   height: 44px;
-  /* color:  */
+
   border-radius: 50%;
   padding: 12px;
+  color: var(--social-color);
 }
 
 .icon-social-item {
   width: 20px;
   height: 20px;
-  fill: var(--social-color);
+  fill: currentColor;
 }
 .icon-contact-link:hover,
 .icon-contact-link:focus {
   background-color: var(--accent-color);
-  /* fill: var(--primary-white-color); */
+  color: var(--primary-white-color);
 }
 
-.icon-social-item:focus,
-.icon-social-item:hover {
-  fill: var(--primary-white-color);
-}
-
-.icon-contact-link:not(:first-child) {
+.icon-contact-list:not(:first-child) {
   margin-left: 10px;
 }
 
+/* client */
+.section-client {
+  padding: 94px 0;
+}
+.client-title {
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--title-text-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.client {
+  display: flex;
+}
+.icon-client {
+  display: inline-block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid var(--social-color);
+  border-radius: 4px;
+  color: var(--social-color);
+}
+.client-list:not(:first-child) {
+  margin-left: 30px;
+}
+.icon-client-item {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.icon-client:hover {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
 /* button */
 .primary-button {
   background-color: var(--accent-color);
@@ -358,10 +390,14 @@ img {
   padding: 60px 0;
 }
 
+.footer-list {
+  display: flex;
+}
 .address {
   font-style: normal;
   margin-top: 20px;
 }
+
 .map-link {
   display: inline-block;
   color: var(--primary-white-color);
@@ -394,6 +430,47 @@ img {
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
+
+.footer-social {
+  margin-left: 70px;
+}
+.footer-title {
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.icon-footer {
+  display: flex;
+}
+
+.icon-footer-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-footer-link:hover,
+.icon-footer-link:focus {
+  background-color: var(--accent-color);
+}
+
+.icon-footer-item {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.icon-footer-list:not(:first-child) {
+  margin-left: 10px;
+}
+
 /* Portfolio */
 
 .section-project {
