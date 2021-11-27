@@ -18,6 +18,7 @@
   --second-button-bg-color: #f5f4fa;
   --border-header-color: #ececec;
   --border-color: #eeeeee;
+  --social-color: #afb1b8;
 }
 
 body {
@@ -112,6 +113,7 @@ header {
   margin-left: auto;
 }
 .contact-link {
+  display: inline-block;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -124,6 +126,21 @@ header {
 .nav-link:focus {
   color: var(--accent-color);
 }
+
+.contact-link-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact-link-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
@@ -173,6 +190,20 @@ img {
   margin-bottom: 30px;
 }
 
+/* Overlay */
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 /* section */
 
 .section-title {
@@ -207,6 +238,18 @@ img {
   line-height: 1.71;
 }
 
+.icon-quality {
+  height: 120px;
+  background: var(--second-button-bg-color);
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+}
+
 .service-list {
   display: flex;
 }
@@ -232,6 +275,41 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
+}
+
+.icon-social {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-contact-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  /* color:  */
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.icon-social-item {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-color);
+}
+.icon-contact-link:hover,
+.icon-contact-link:focus {
+  background-color: var(--accent-color);
+  /* fill: var(--primary-white-color); */
+}
+
+.icon-social-item:focus,
+.icon-social-item:hover {
+  fill: var(--primary-white-color);
+}
+
+.icon-contact-link:not(:first-child) {
+  margin-left: 10px;
 }
 
 /* button */
