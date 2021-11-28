@@ -13,6 +13,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --icon-white-color: #ffffff;
   --second-bg-color: #2f303a;
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --second-button-bg-color: #f5f4fa;
@@ -113,7 +114,8 @@ header {
   margin-left: auto;
 }
 .contact-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -128,15 +130,11 @@ header {
 }
 
 .contact-link-icon {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 
 .contact-link-tel {
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -191,8 +189,7 @@ img {
 }
 
 /* Overlay */
-.overlay {
-  height: 600px;
+.hero-overlay {
   max-width: 1600px;
   margin: 0 auto;
   background-image: linear-gradient(
@@ -239,15 +236,13 @@ img {
 }
 
 .icon-quality {
-  height: 120px;
   background: var(--second-button-bg-color);
   margin-bottom: 30px;
   padding: 25px 100px;
 }
 
 .icon {
-  width: 70px;
-  height: 70px;
+  display: block;
 }
 
 .service-list {
@@ -289,24 +284,22 @@ img {
 }
 
 .icon-contact-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-
   border-radius: 50%;
-  padding: 12px;
   color: var(--social-color);
 }
 
 .icon-social-item {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
 }
 .icon-contact-link:hover,
 .icon-contact-link:focus {
   background-color: var(--accent-color);
-  color: var(--primary-white-color);
+  color: var(--icon-white-color);
 }
 
 .icon-contact-list:not(:first-child) {
@@ -328,10 +321,10 @@ img {
   display: flex;
 }
 .icon-client {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   width: 170px;
-  height: 92px;
-  padding: 16px 32px;
+  padding: 16px 0;
   border: 1px solid var(--social-color);
   border-radius: 4px;
   color: var(--social-color);
@@ -340,8 +333,6 @@ img {
   margin-left: 30px;
 }
 .icon-client-item {
-  width: 106px;
-  height: 60px;
   fill: currentColor;
 }
 
@@ -455,12 +446,13 @@ img {
 }
 
 .icon-footer-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  padding: 12px;
-  color: var(--primary-white-color);
+  color: var(--icon-white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -470,8 +462,6 @@ img {
 }
 
 .icon-footer-item {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
 }
 
